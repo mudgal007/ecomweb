@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-mulberry: #2C1A30;
+  --color-gold: #D4AF37;
+  --color-alabaster: #FAF7F2;
+  --color-lavender-mist: #F2ECFA;
+  --color-blush-pink: #F7E5E9;
+  --color-velvet-charcoal: #1F1521;
+  --color-silk-gray: #E5E0DB;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', Inter, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-alabaster text-velvet-charcoal font-sans antialiased selection:bg-blush-pink selection:text-mulberry;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-mulberry;
+  }
+}
+
+/* Custom styles for luxury touchpoints */
+.gold-rating-star {
+  color: #D4AF37;
+  fill: #D4AF37;
+}
+
+/* Custom scrollbars for clean interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E0DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C1A30;
+}
