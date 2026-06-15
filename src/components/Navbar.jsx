@@ -49,7 +49,7 @@ export default function Navbar({
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-8 h-full" onMouseLeave={handleShopLeave}>
             <div 
-              className="relative h-full flex items-center" 
+              className="h-full flex items-center" 
               onMouseEnter={handleShopHover}
             >
               <button 
